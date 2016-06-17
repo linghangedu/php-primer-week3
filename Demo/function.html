@@ -1,0 +1,32 @@
+<html>
+<head>
+
+    <script type="text/javascript">
+        function sayHello()
+        {
+            document.write ("Hello there!");
+            console.log("hello console");
+        }
+
+        function sayHello1(name, age)
+        {
+            document.write (name + " is " + age + " years old.");
+        }
+    </script>
+
+</head>
+<body>
+<p>Click the following button to call the function</p>
+
+<form>
+    <input type="button" onclick="sayHello()" value="Say Hello">
+</form>
+
+<p>Click the following button to call the function</p>
+
+<form>
+    <input type="button" onclick="sayHello1('Zara', 7)" value="Say Hello">
+</form>
+
+</body>
+</html>

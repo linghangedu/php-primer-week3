@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<h1>for loop</h1>
+<script type="text/javascript">
+    <!--
+    var count;
+    document.write("Starting Loop" + "<br />");
+
+    for(count = 0; count < 5; count++){
+        document.write("Current Count : " + count );
+        document.write("<br />");
+        break;
+    }
+
+    document.write("Loop stopped!");
+    //-->
+</script>
+
+
+<h1>with break</h1>
+<script type="text/javascript">
+    <!--
+    var x = 1;
+    document.write("Entering the loop<br /> ");
+
+    while (x < 10)
+    {
+        if (x == 5){
+            break; // breaks out of loop completely
+        }
+        x = x + 1;
+        document.write( x + "<br />");
+    }
+
+    document.write("Exiting the loop!<br /> ");
+    //-->
+</script>
+
+
+<h1>with continue</h1>
+<script type="text/javascript">
+    <!--
+    var x = 1;
+    document.write("Entering the loop<br /> ");
+
+    while (x < 10)
+    {
+        x = x + 1;
+
+        if (x == 5){
+            continue; // skill rest of the loop body
+        }
+        document.write( x + "<br />");
+    }
+
+    document.write("Exiting the loop!<br /> ");
+    //-->
+</script>
+</body>
+</html>
