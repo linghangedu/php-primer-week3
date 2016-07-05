@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>JavaScript Date Method</title>
+</head>
+
+<body>
+ <h2>Date</h2>
+ <script type="text/javascript">
+   var dt = Date();
+   document.write("Date and Time : " + dt );
+   document.write("getDate() : " + dt.getDate() );
+   document.write("getDay() : " + dt.getDay() );
+   document.write("getFullYear() : " + dt.getFullYear() );
+   document.write("getMonth() : " + dt.getMonth() );
+   document.write("getHours() : " + dt.getHours() );
+   document.write("getMinutes() : " + dt.getMinutes() );
+   document.write("getSeconds() : " + dt.getSeconds() );
+   document.write("getMilliseconds() : " + dt.getMilliseconds() );
+
+   document.write("getTime() : " + dt.getTime() );
+
+   document.write("getUTCDate() : " + dt.getUTCDate() );
+
+   document.write( "Formated Date : " + dt.toLocaleDateString() );
+   document.write( "Formated Date : " + dt.toGMTString()
+   document.write( "Formated Date : " + dt.toLocaleFormat( "%A, %B %e, %Y" ) );
+</script>
+
+</body>
+</html>
