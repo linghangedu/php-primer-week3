@@ -1,0 +1,54 @@
+<html>
+
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript"
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+            $("div#division").click(function () {
+               var content = $(this).html();
+               $("#result").text( content );
+
+            });
+
+             $("div#division2").click(function () {
+               $(this).replaceWith("<h1>JQuery is Great</h1>");
+            });
+
+             $(".div").click(function () {
+               $(this).remove( );
+            });
+
+             $(".insert").click(function () {
+               $(this).before('<div class="newdiv"></div>' );
+            });
+         });
+      </script>
+
+      <style>
+         #division{ margin:10px;padding:12px; border:2px solid #666; width:60px;}
+         .newdiv{ margin:10px;padding:12px; border:2px solid #666; width:60px;}
+      </style>
+   </head>
+
+   <body>
+
+      <p>Click on the square below:</p>
+      <span id = "result"> </span>
+
+      <div id = "division" style = "background-color:blue;">
+         This is Blue Square!!
+      </div>
+
+      <div id = "division2" style = "background-color:pink;">
+         This is Pick Square!!
+      </div>
+
+       <div class = "div" style = "background-color:blue;"></div>
+      <div class = "div" style = "background-color:green;"></div>
+      <div class = "div insert" style = "background-color:red;"></div>
+   </body>
+
+</html>

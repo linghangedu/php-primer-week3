@@ -1,0 +1,33 @@
+<html>
+
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript"
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function(){
+            $("p").parent().addClass('hilight');
+         });
+      </script>
+
+      <style>
+         .hilight { background:yellow; }
+      </style>
+   </head>
+
+   <body>
+
+      <scan>Top Element</scan>
+
+      <div>
+         <div>sibling
+             <div>child</div>
+         </div>
+         <p>sibling</p>
+         <scan>sibling</scan>
+     </div>
+
+ </body>
+
+</html>

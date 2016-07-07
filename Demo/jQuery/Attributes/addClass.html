@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+   .selected { color:red; }
+   .highlight { background:yellow; }
+   .red { color:red; }
+   .green { color:green; }
+</style>
+<script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+    <!--
+    $(document).ready(function() {
+        $("em").addClass("selected");
+        $("#myid").addClass("highlight");
+
+        $("#result1").text( $("p#pid1").hasClass("red") );
+        $("#result2").text( $("p#pid2").hasClass("red") );
+
+        $("p#pid1").removeClass("red");
+
+        $("p#pid3").click(function () {
+         $(this).toggleClass("red");
+     });
+    });
+        //-->
+    </script>
+</head>
+<body>
+    <em title = "Bold and Brave">This is first paragraph.</em>
+    <p id = "myid">This is second paragraph.</p>
+
+    <p class = "red" id = "pid1">This is first paragraph.</p>
+    <p class = "green" id = "pid2">This is second paragraph.</p>
+
+    <p class = "red" id = "pid3">This is first paragraph.</p>
+
+    <div id = "result1"></div>
+    <div id = "result2"></div>
+</body>
+</html>

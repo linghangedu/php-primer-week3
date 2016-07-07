@@ -1,0 +1,28 @@
+<html>
+
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript"
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+            $("p").find("span").addClass("selected");
+         });
+      </script>
+
+      <style>
+         .selected { color:red; }
+      </style>
+   </head>
+
+   <body>
+
+      <div>
+         <p><span>Hello</span>, how are you?</p>
+         <p>Me? I'm <span>good</span>.</p>
+      </div>
+
+   </body>
+
+</html>

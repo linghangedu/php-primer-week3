@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>The jQuery Example</title>
+  <script type = "text/javascript"
+  src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script type = "text/javascript" language = "javascript">
+   $(document).ready(function() {
+    $('#click li').click(function() {
+        $(this).parent().append($('<li>List item</li>'));
+    });
+
+
+    $('#on').on('click', 'li', function() {
+        $(this).parent().append($('<li>List item</li>'));
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+
+    With click():<br/>
+    <ul id="click">
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+    </ul>
+
+    <br/><br/>
+
+    With on():<br/>
+    <ul id="on">
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+    </ul>
+</body>
+
+</html>
