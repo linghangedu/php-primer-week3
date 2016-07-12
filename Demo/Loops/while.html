@@ -14,7 +14,7 @@
     while (++count < 5){
         document.write("Current Count : " + count + "<br />");
         //count++;
-    }
+}
 
     document.write("Loop stopped!");
     //-->
@@ -33,6 +33,46 @@
     while (++count < 5);
 
     document.write ("Loop stopped!");
+    //-->
+</script>
+
+<h1>with break</h1>
+<script type="text/javascript">
+    <!--
+    var x = 1;
+    document.write("Entering the loop<br /> ");
+
+    while (x < 10)
+    {
+        if (x == 5){
+            break; // breaks out of loop completely
+        }
+        x = x + 1;
+        document.write( x + "<br />");
+    }
+
+    document.write("Exiting the loop!<br /> ");
+    //-->
+</script>
+
+
+<h1>with continue</h1>
+<script type="text/javascript">
+    <!--
+    var x = 1;
+    document.write("Entering the loop<br /> ");
+
+    while (x < 10)
+    {
+        x = x + 1;
+
+        if (x == 5){
+            continue; // skill rest of the loop body
+        }
+        document.write( x + "<br />");
+    }
+
+    document.write("Exiting the loop!<br /> ");
     //-->
 </script>
 </body>
